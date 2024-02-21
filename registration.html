@@ -3,17 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration - Precious People</title>
-    <!-- Add your CSS file link here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Soft blue background */
+            color: #333; /* Dark gray text color for readability */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004d99; /* Precious People's theme color */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            margin-top: 10px; /* Added margin for spacing between title and nav */
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px; /* Added some horizontal spacing between links */
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Added to include padding in the input width */
+        }
+        input[type="submit"] {
+            background-color: #004d99;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            width: 100%; /* Make the submit button match the input fields width */
+        }
+        input[type="submit"]:hover {
+            background-color: #003366;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <!-- Navigation bar here -->
+        <h1>Precious People Transportation Services</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="registration.html">Registration</a>
+            <a href="signin.html">Login</a>
+        </nav>
     </header>
-    <section>
-        <!-- Registration Form -->
-    </section>
+
+    <div class="form-container">
+        <form action="/submit-registration" method="post"> <!-- You need to replace the action with your actual endpoint -->
+            <h2>Registration Form</h2>
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
     <footer>
-        <!-- Footer content here -->
+        <p>Contact us: 848-244-1793 | preciouspeopletransportation@gmail.com</p>
     </footer>
 </body>
 </html>

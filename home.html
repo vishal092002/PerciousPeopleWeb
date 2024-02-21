@@ -11,12 +11,19 @@
             margin: 0;
             padding: 0;
         }
-        header, footer {
+        header {
             background-color: #004d99; /* Precious People's theme color */
             color: white;
-            color: #333333;
             text-align: center;
             padding: 10px 0;
+        }
+        nav {
+            margin-top: 10px; /* Added margin for spacing between title and nav */
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px; /* Added some horizontal spacing between links */
         }
         section {
             padding: 20px;
@@ -57,21 +64,30 @@
         input[type="submit"]:hover {
             background-color: #003366;
         }
+        .slideshow-container img {
+            display: block; /* Ensure images are block level to fill container */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px; /* Ensure there's space above the footer */
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Precious People Transportation Services</h1>
-    </header>
-
-    <header
-        <nav class="navbar">
-        <a href="home.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="registration.html">Registration</a>
-        <a href="signin.html">Login</a>
-    </nav>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="registration.html">Registration</a>
+            <a href="signin.html">Login</a>
+        </nav>
     </header>
 
     <section class="mission">
@@ -83,27 +99,29 @@
         <h2>About Us</h2>
         <p>Precious People is a dedicated school bus company that goes beyond transportation. We offer specialized support for children with special needs and provide valuable assistance to parents dealing with anxiety and stress. Our innovative platform and technology focus on enhancing the lives of families through tailored activities and curriculums.</p>
     </section>
-     <div class="slideshow-container">
-        <!-- Full-width images with numbers and caption text -->
-        <div class="slide">
-            <img src="IMG_0072.jpg" style="width:100 %">
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="IMG_0072.jpg" style="width:100%">
         </div>
-        <div class="slide">
+        <div class="mySlides">
             <img src="IMG_0073.jpg" style="width:100%">
         </div>
-<script>
+    </div>
+
+    <script>
         var slideIndex = 0;
         showSlides();
 
         function showSlides() {
             var i;
-            var slides = document.getElementsByClassName("slide");
+            var slides = document.getElementsByClassName("mySlides");
             for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+                slides[i].style.display = "none";  
             }
             slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = "block";
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
             setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
     </script>
