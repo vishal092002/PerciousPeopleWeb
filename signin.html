@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign On - Precious People</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Soft blue background */
+            color: #333; /* Dark gray text color for readability */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004d99; /* Precious People's theme color */
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 50px auto; /* Added more margin for vertical spacing */
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 20px); /* Adjust width to account for padding */
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        input[type="submit"] {
+            background-color: #004d99;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin-top: 10px; /* Added margin-top for spacing above the submit button */
+        }
+        input[type="submit"]:hover {
+            background-color: #003366;
+        }
+        footer {
+            background-color: #004d99; /* Matching the header's background color */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto; /* Ensures footer is at the bottom */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Precious People Transportation Services</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="signin.html">Login</a>
+             <a href="registration.html">Registration</a>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <form action="/sign-on" method="post"> <!-- Update action as needed -->
+            <h2>Sign On</h2>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Sign On">
+        </form>
+    </div>
+
+    <footer>
+        <p>Contact us: 848-244-1793 | preciouspeopletransportation@gmail.com</p>
+    </footer>
+</body>
+</html>
