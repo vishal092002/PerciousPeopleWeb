@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-In - Precious People</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Soft blue background */
+            color: #333; /* Dark gray text color for readability */
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #004d99; /* Precious People's theme color */
+            color: white;
+            color: #333333;
+            text-align: center;
+            padding: 10px 0;
+        }
+        section {
+            padding: 20px;
+        }
+        .mission, .about {
+            background-color: #e6f7ff; /* Lighter shade of blue for sections */
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #004d99;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Precious People Transportation Services</h1>
+    </header>
+
+    <header
+        <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="registration.html">Registration</a>
+        <a href="signin.html">Login</a>
+    </nav>
+    </header>
+
+    <section class="mission">
+        <h2>Mission Statement</h2>
+        <p>Our mission at Precious People is to provide safe and reliable transportation services for children with autism and disabilities. We aim to support parents in their journey by offering community assistance, engaging activities, and nurturing environments for their children.</p>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Precious People is a dedicated school bus company that goes beyond transportation. We offer specialized support for children with special needs and provide valuable assistance to parents dealing with anxiety and stress. Our innovative platform and technology focus on enhancing the lives of families through tailored activities and curriculums.</p>
+    </section>
+     <div class="slideshow-container">
+        <!-- Full-width images with numbers and caption text -->
+        <div class="slide">
+            <img src="IMG_0072.jpg" style="width:100 %">
+        </div>
+        <div class="slide">
+            <img src="IMG_0073.jpg" style="width:100%">
+        </div>
+<script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <footer>
+        <p>Contact us: 848-244-1793 | preciouspeopletransportation@gmail.com</p>
+    </footer>
+</body>
+</html>
